@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Crescimento dos estrangeiros no ensino superior Brasileiro
+# # Análise dos estrangeiros no ensino superior Brasileiro
 
 # ## Importação das bibliotecas necessárias
 
@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 
 
 # ## Leitura das planilhas com o dados
+# ### Os arquivos podem levar até 15 minutos para abrir
 
 # In[2]:
 
@@ -57,7 +58,7 @@ mulher_estrangeira_nat_2014 = []
 
 # ## Código para leitura dos dados e os prints dos mesmos
 
-# In[234]:
+# In[4]:
 
 
 estrangeiro_2018.append(df_2018.query('(TP_NACIONALIDADE == 3)')['TP_NACIONALIDADE'].count())
@@ -65,24 +66,24 @@ mulher_estrangeira_2018.append(df_2018.query('(TP_NACIONALIDADE == 3 and TP_SEXO
 estrangeiro_nat_2018.append(df_2018.query('(TP_NACIONALIDADE == 2)')['TP_NACIONALIDADE'].count())
 mulher_estrangeira_nat_2018.append(df_2018.query('(TP_NACIONALIDADE == 2 and TP_SEXO == 1)')['TP_NACIONALIDADE'].count())
 print('')
-print('\033[1;32m2018\033[m')
+print('2018')
 print('')
-print(f'Temos \033[1;4;34m{(estrangeiro_2018[0])}\033[m estrangeiros nas universidades brasileiras em 2018.')
-print(f'Temos \033[1;4;34m{(mulher_estrangeira_2018[0])}\033[m mulheres estrangeiras nas universidades brasileiras em 2018.')
-print(f'Temos \033[1;4;34m{(estrangeiro_nat_2018[0])}\033[m brasileiros naturalizados nas universidades brasileiras em 2018.')
-print(f'Temos \033[1;4;34m{(mulher_estrangeira_nat_2018[0])}\033[m mulheres brasileiras naturalizadas nas universidades brasileiras em 2018.')
+print(f'Temos {(estrangeiro_2018[0])} estrangeiros nas universidades brasileiras em 2018.')
+print(f'Temos {(mulher_estrangeira_2018[0])} mulheres estrangeiras nas universidades brasileiras em 2018.')
+print(f'Temos {(estrangeiro_nat_2018[0])} brasileiros naturalizados nas universidades brasileiras em 2018.')
+print(f'Temos {(mulher_estrangeira_nat_2018[0])} mulheres brasileiras naturalizadas nas universidades brasileiras em 2018.')
 
 estrangeiro_2017.append(df_2017.query('(TP_NACIONALIDADE == 3)')['TP_NACIONALIDADE'].count())
 mulher_estrangeira_2017.append(df_2017.query('(TP_NACIONALIDADE == 3 and TP_SEXO == 1)')['TP_NACIONALIDADE'].count())
 estrangeiro_nat_2017.append(df_2017.query('(TP_NACIONALIDADE == 2)')['TP_NACIONALIDADE'].count())
 mulher_estrangeira_nat_2017.append(df_2017.query('(TP_NACIONALIDADE == 2 and TP_SEXO == 1)')['TP_NACIONALIDADE'].count())
 print('')
-print('\033[1;32m2017\033[m')
+print('2017')
 print('')
-print(f'Tínhamos \033[1;4;34m{(estrangeiro_2017[0])}\033[m estrangeiros nas universidades brasileiras em 2017.')
-print(f'Tínhamos \033[1;4;34m{(mulher_estrangeira_2017[0])}\033[m mulheres estrangeiras nas universidades brasileiras em 2017.')
-print(f'Tínhamos \033[1;4;34m{(estrangeiro_nat_2017[0])}\033[m brasileiros naturalizados nas universidades brasileiras em 2017.')
-print(f'Tínhamos \033[1;4;34m{(mulher_estrangeira_nat_2017[0])}\033[m mulheres brasileiras naturalizadas nas universidades brasileiras em 2017.')
+print(f'Tínhamos {(estrangeiro_2017[0])} estrangeiros nas universidades brasileiras em 2017.')
+print(f'Tínhamos {(mulher_estrangeira_2017[0])} mulheres estrangeiras nas universidades brasileiras em 2017.')
+print(f'Tínhamos {(estrangeiro_nat_2017[0])} brasileiros naturalizados nas universidades brasileiras em 2017.')
+print(f'Tínhamos {(mulher_estrangeira_nat_2017[0])} mulheres brasileiras naturalizadas nas universidades brasileiras em 2017.')
 
 
 estrangeiro_2016.append(df_2016.query('(CO_NACIONALIDADE_ALUNO == 3)')['CO_NACIONALIDADE_ALUNO'].count())
@@ -90,12 +91,12 @@ mulher_estrangeira_2016.append(df_2016.query('(CO_NACIONALIDADE_ALUNO == 3 and I
 estrangeiro_nat_2016.append(df_2016.query('(CO_NACIONALIDADE_ALUNO == 2)')['CO_NACIONALIDADE_ALUNO'].count())
 mulher_estrangeira_nat_2016.append(df_2016.query('(CO_NACIONALIDADE_ALUNO == 2 and IN_SEXO_ALUNO == 1)')['CO_NACIONALIDADE_ALUNO'].count())
 print('')
-print('\033[1;32m2016\033[m')
+print('2016')
 print('')
-print(f'Tínhamos \033[1;4;34m{(estrangeiro_2016[0])}\033[m estrangeiros nas universidades brasileiras em 2016.')
-print(f'Tínhamos \033[1;4;34m{(mulher_estrangeira_2016[0])}\033[m mulheres estrangeiras nas universidades brasileiras em 2016.')
-print(f'Tínhamos \033[1;4;34m{(estrangeiro_nat_2016[0])}\033[m brasileiros naturalizados nas universidades brasileiras em 2016.')
-print(f'Tínhamos \033[1;4;34m{(mulher_estrangeira_nat_2016[0])}\033[m mulheres brasileiras naturalizadas nas universidades brasileiras em 2016.')
+print(f'Tínhamos {(estrangeiro_2016[0])} estrangeiros nas universidades brasileiras em 2016.')
+print(f'Tínhamos {(mulher_estrangeira_2016[0])} mulheres estrangeiras nas universidades brasileiras em 2016.')
+print(f'Tínhamos {(estrangeiro_nat_2016[0])} brasileiros naturalizados nas universidades brasileiras em 2016.')
+print(f'Tínhamos {(mulher_estrangeira_nat_2016[0])} mulheres brasileiras naturalizadas nas universidades brasileiras em 2016.')
 
 
 estrangeiro_2015.append(df_2015.query('(CO_NACIONALIDADE_ALUNO == 3)')['CO_NACIONALIDADE_ALUNO'].count())
@@ -103,12 +104,12 @@ mulher_estrangeira_2015.append(df_2015.query('(CO_NACIONALIDADE_ALUNO == 3 and I
 estrangeiro_nat_2015.append(df_2015.query('(CO_NACIONALIDADE_ALUNO == 2)')['CO_NACIONALIDADE_ALUNO'].count())
 mulher_estrangeira_nat_2015.append(df_2015.query('(CO_NACIONALIDADE_ALUNO == 2 and IN_SEXO_ALUNO == 1)')['CO_NACIONALIDADE_ALUNO'].count())
 print('')
-print('\033[1;32m2015\033[m')
+print('2015')
 print('')
-print(f'Tínhamos \033[1;4;34m{(estrangeiro_2015[0])}\033[m estrangeiros nas universidades brasileiras em 2015.')
-print(f'Tínhamos \033[1;4;34m{(mulher_estrangeira_2015[0])}\033[m mulheres estrangeiras nas universidades brasileiras em 2015.')
-print(f'Tínhamos \033[1;4;34m{(estrangeiro_nat_2015[0])}\033[m brasileiros naturalizados nas universidades brasileiras em 2015.')
-print(f'Tínhamos \033[1;4;34m{(mulher_estrangeira_nat_2015[0])}\033[m mulheres brasileiras naturalizadas nas universidades brasileiras em 2015.')
+print(f'Tínhamos {(estrangeiro_2015[0])} estrangeiros nas universidades brasileiras em 2015.')
+print(f'Tínhamos {(mulher_estrangeira_2015[0])} mulheres estrangeiras nas universidades brasileiras em 2015.')
+print(f'Tínhamos {(estrangeiro_nat_2015[0])} brasileiros naturalizados nas universidades brasileiras em 2015.')
+print(f'Tínhamos {(mulher_estrangeira_nat_2015[0])} mulheres brasileiras naturalizadas nas universidades brasileiras em 2015.')
 
 
 estrangeiro_2014.append(df_2014.query('(CO_NACIONALIDADE_ALUNO == 3)')['CO_NACIONALIDADE_ALUNO'].count())
@@ -116,22 +117,22 @@ mulher_estrangeira_2014.append(df_2014.query('(CO_NACIONALIDADE_ALUNO == 3 and I
 estrangeiro_nat_2014.append(df_2014.query('(CO_NACIONALIDADE_ALUNO == 2)')['CO_NACIONALIDADE_ALUNO'].count())
 mulher_estrangeira_nat_2014.append(df_2014.query('(CO_NACIONALIDADE_ALUNO == 2 and IN_SEXO_ALUNO == 1)')['CO_NACIONALIDADE_ALUNO'].count())
 print('')
-print('\033[1;32m2014\033[m')
+print('2014')
 print('')
-print(f'Tínhamos \033[1;4;34m{(estrangeiro_2014)[0]}\033[m estrangeiros nas universidades brasileiras em 2014.')
-print(f'Tínhamos \033[1;4;34m{(mulher_estrangeira_2014[0])}\033[m mulheres estrangeiras nas universidades brasileiras em 2014.')
-print(f'Tínhamos \033[1;4;34m{(estrangeiro_nat_2014[0])}\033[m brasileiros naturalizados nas universidades brasileiras em 2014.')
-print(f'Tínhamos \033[1;4;34m{(mulher_estrangeira_nat_2014[0])}\033[m mulheres brasileiras naturalizadas nas universidades brasileiras em 2014.')
+print(f'Tínhamos {(estrangeiro_2014)[0]} estrangeiros nas universidades brasileiras em 2014.')
+print(f'Tínhamos {(mulher_estrangeira_2014[0])} mulheres estrangeiras nas universidades brasileiras em 2014.')
+print(f'Tínhamos {(estrangeiro_nat_2014[0])} brasileiros naturalizados nas universidades brasileiras em 2014.')
+print(f'Tínhamos {(mulher_estrangeira_nat_2014[0])} mulheres brasileiras naturalizadas nas universidades brasileiras em 2014.')
 print('')
 
 print('Total dos estudantes nascidos no exterior, naturalizados ou não, nas universidades brasileiras.')
-total = (f'\033[1;4;34m{(estrangeiro_2018[0]) + (estrangeiro_nat_2018[0])}\033[m')
+total = (f'{(estrangeiro_2018[0]) + (estrangeiro_nat_2018[0])}')
 print(total)
 
 
 # ## Código para fazer a análise em gráficos
 
-# In[255]:
+# In[6]:
 
 
 x1 = [2014, 2015, 2016, 2017, 2018]
@@ -155,8 +156,9 @@ for i, v in enumerate(y2):
 
 plt.show()
 
-print('Entre 2014 e 2018 tivemos um aumento de \033[1;4;34m3.097\033[m alunos estrangeiros \033[1;4;34m(15,4%)\033[m, uma média de \033[1;4;34m619,4\033[m estudantes por ano,')
-print('e um aumento de \033[1;4;34m1.155\033[m mulheres estrangeiras \033[1;4;34m(12,4%)\033[m, uma média de \033[1;4;34m231\033[m estudantes por ano.')
+print('Entre 2014 e 2018 tivemos um aumento de 3.097 alunos estrangeiros (15,4%),')
+print('uma média de 619,4 estudantes por ano, e um aumento de 1.155 mulheres estrangeiras (12,4%),')
+print('uma média de 231 estudantes por ano.')
 
 
 x1 = [2014, 2015, 2016, 2017, 2018]
@@ -180,14 +182,15 @@ for i, v in enumerate(y2):
 
 plt.show()
 
-print('Entre 2014 e 2018 tivemos um aumento de \033[1;4;34m526\033[m alunos brasileiros naturalizados\033[1;4;34m(4,7%)\033[m, uma média de \033[1;4;34m105,2\033[m estudantes por ano,')
-print('e uma queda de \033[1;4;31m198\033[m alunas brasileiras naturalizadas\033[1;4;31m(3,3%)\033[m, uma média de \033[1;4;31m39,6\033[m estudantes por ano.')
+print('Entre 2014 e 2018 tivemos um aumento de 526 alunos brasileiros naturalizados (4,7%),')
+print('uma média de 105,2 estudantes por ano, e uma queda de 198 alunas brasileiras naturalizadas (3,3%),')   
+print('uma média de 39,6 estudantes por ano.')
 
 print('')
 print('')
 print('')
 print('')
-print('\033[1;4mRelação entre mulheres e homens estrangeiros\033[m')
+print('Relação entre mulheres e homens estrangeiros')
 est = int(estrangeiro_2018[0]) - int(mulher_estrangeira_2018[0])
 m_est = int(mulher_estrangeira_2018[0])
 size = [est, m_est]
